@@ -1,0 +1,120 @@
+1. 
+package pack1;
+
+import java.util.Scanner;
+
+class Student {
+
+int s_id;
+
+String s_name;
+
+int marks;
+
+void input () {
+
+Scanner sc = new Scanner(System.in);
+
+System.out.println("Enter s_id");
+
+s_id = sc.nextInt(); System.out.println("Enter s_name");
+
+s_name = sc.next(); System.out.println("Enter_marks");
+
+marks=sc.nextInt();
+}
+
+void output () {
+
+System.out.println(s_id);
+System.out.println(s_name); 
+System.out.println (marks);
+}
+}
+
+public class Person {
+
+public static void main(String[] args) {
+Student df=new Student();
+df.input(); 
+df.output();
+}
+}
+
+
+
+
+2.
+
+  package pack1;
+
+public class emp {
+	int eid;
+	String ename;
+	double bal;
+	emp(int x,String y,double z)
+	{
+		eid=x;
+		ename=y;
+		bal=z;
+	}
+	void emp1(int x,String y,double z)
+	{
+		eid=x;
+		ename=y;
+		bal=z;
+	}
+	
+	void show()
+	{
+		System.out.println(eid+" "+ename+" "+bal);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+emp b1=new emp(150,"charan",25000);
+b1.show();
+emp b2=new emp(155,"charan",35000);
+b2.show();
+
+	}
+
+}
+
+
+3.
+
+
+package x;
+class Person{
+	int pid;
+	String pname;
+	Person(int x,String y){
+		pid=x;
+		pname=y;
+	}
+}
+class Student1 extends Person{
+    double marks;
+	Student1(int x, String y,double z) {
+		super(x, y);
+		marks=z;
+	System.out.println(x+" "+y+" "+z);
+	}
+	}
+class Emp extends Person{
+	double salary;
+	Emp(int x,String y,double m){
+		super(x,y);
+		salary=m;
+		System.out.println(x+" "+y+" "+m);	
+}
+}
+public class Inher {
+
+public static void main(String[] args) {
+	Student1 S=new Student1(1,"cahran",1000);
+    Emp E=new Emp(2,"nisit",950);
+}
+}
+
